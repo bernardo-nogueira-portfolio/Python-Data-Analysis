@@ -1,0 +1,119 @@
+np__version__
+np.__version__
+conda install numpy
+np.__version__
+import numpy as np
+np.__version__
+conda install pandas
+pd.read_csv('Documents/data.csv')
+import pandas as pd
+pd.read_csv('Documents/data.csv')
+data= pd.read_csv('Documents/data.csv')
+data.shape
+data.columns
+data['Make'].unique()
+data['Make'].count_values()
+data['Make'].count_values
+data['Make'].value_count()
+data['Make'].value_counts()
+data[data['model']=='Audi'].value_count()
+data[data['Model']=='Audi'].value_count()
+data[data['Model']=='Audi'].value_counts()
+data[data['Model']=='Audi'].head(
+)
+data[data['Model']=='Audi'].sum()
+data[data['Maker']=='Audi'].sum()
+data[data['Maker']=='Audi'].head()
+data.columns
+data[data['Make']=='Audi'].head()
+data[data['Make']=='Audi'].unique('Model')
+data[data['Make']=='Audi'].distinct('Model')
+data[data['Make']=='Audi']['model']
+data[data['Make']=='Audi']['Model']
+data[data['Make']=='Audi']['Model'].value_counts
+data[data['Make']=='Audi']
+audi_data= data[data['Make']=='Audi']
+audi_data['Model']
+audi_data['Model'].unique()
+audi_data['Model'].unique().sum()
+audi_data['Model'].value_counts()
+audi_data['Model'].value_counts().shape()
+audi_data['Model'].value_counts().shape
+data.isnull()
+data.isna().any(axis=1).sum()
+data.isna().any(axis=0).sum()
+data['w][0]
+data['w'][0]
+data['W'][0]
+data.columns
+data['Engine Cylinders'].mean()
+data['Engine Cylinders'].median()
+data['Engine Cylinders'].mode()
+data['Engine Cylinders'].fillna(4.0)
+data['Engine Cylinders'].fillna(4.0).mean()
+data['Engine Cylinders'].fillna(4.0).median()
+data[data['Make'] =='Lotus']
+lotus_data= data[data['Make'] =='Lotus']
+lotus_data_sub = lotus_data[['Engine HP', 'Engine Cylinders']]
+lotus_data_sub = lotus_data_sub.drop_duplicates()
+x= lotus_data_sub
+X= lotus_data_sub
+XT= X.T
+XT
+X
+X*XT
+XTX= X*XT
+XTX ^-1
+np.linalg.inv(XTX)
+np.array(XTX)
+XTX
+X= np.array(lotus_data_sub)
+XT= X.T
+XT
+np.linalg.inv(XTX)
+np.matmul(X,XT)
+XTX= np.matmul(X,XT)
+np.linalg.inv(XTX
+)
+np.linalg.inv(XTX)
+y= np.array([1100, 800, 750, 850, 1300, 1000, 1000, 1300, 800])
+XTX_inv = np.linalg.inv(XTX)
+np,matmul(np.matmul(XTX_inv,XT), y) 
+np.matmul(np.matmul(XTX_inv,XT), y)
+np.matmul(XTX_inv,XT)
+xtx
+XTX
+XTX= np.matmul(X,XT)
+XT= X.T
+XTX_inv *XT
+XTX_inv *X
+x.Transpose
+np.matrix.transpose(X)
+XT= np.matrix.transpose(X)
+np.matmul(X,XT)
+XTX= np.matmul(X,XT)
+XTX_inv = np.linalg.inv(XTX)
+XTX_inv
+XTX_inv* XT
+XTX_inv* XTX
+(XTX_inv* XTX ) *y
+X_trans= X.T
+XTX= np.matmul(X,XT)
+XTX_ = np.matmul(X,XT)
+XTX= X*XT
+XTX= XT*X
+XTX= np.matmul(X_trans, X)
+XTX
+XTX_inv = np.linalg.inv(XTX)
+XTX_inv* X_trans
+XTX_inv* XT
+X_trans
+XTX_inv* X_trans
+XTX_inv = np.linalg.inv(XTX)
+XTX = np.matmul(X_trans, X)
+XTX
+XTX_inv = np.linalg.inv(XTX)
+XTX_inv
+XTX_inv* X_trans
+np.matmul(XTX_inv, X_trans)
+np.matmul(np.matmul(XTX_inv, X_trans), y )
