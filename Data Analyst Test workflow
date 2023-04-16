@@ -1,0 +1,175 @@
+import pandas as pd
+import seaborn as sns
+covid= read_csv("C:\Users\Bernardo\Downloads\data\cardio_alco.csv")
+covid= read.csv("C:\Users\Bernardo\Downloads\data\cardio_alco.csv")
+covid= pd.read_csv("C:\Users\Bernardo\Downloads\data\cardio_alco.csv")
+covid= pd.read_csv('C:\Users\Bernardo\Downloads\data\cardio_alco.csv')
+covid= pd.read_csv('Documents/covid_data.csv')
+covid= pd.read_csv('C:\Users\Bernardo\Downloads\data\cardio_base.csv')
+covid= pd.read_csv('Users\Bernardo\Downloads\data\cardio_base.csv')
+covid= pd.read_csv('Downloads\data\cardio_base.csv')
+covid= pd.read_csv('covid_data.csv')
+cardio= pd.read_csv('cardio_base.csv')
+cardio_alco= pd.read_csv('cardio_alco.csv'
+)
+import numpy as np
+cardio['age'].apply(lambda x: x/365)
+cardio['age'].apply(lambda x: np.round(x/365))
+cardio['age'].apply(lambda x: np.floor(x/365))
+cardio['age_years']= cardio['age'].apply(lambda x: np.floor(x/365))
+cardio.grouby('age_years').mean()
+cardio.groupby('age_years').mean()
+cardio.groupby('age_years').mean()['weight']
+cardio.groupby('age_years').mean()['weight'].max()
+wmax= cardio.groupby('age_years').mean()['weight'].max()
+wmin= cardio.groupby('age_years').mean()['weight'].min()
+cardio[cardio['age']> 50]
+cardio[cardio['age']> 50]['cholesterol']
+cardio[cardio['age']> 50]['cholesterol'].mean()
+cardio[cardio['age']<= 50]['cholesterol'].mean()
+cardio[cardio['age']< 51]['cholesterol'].mean()
+cardio= cardio.dropna()
+cardio[cardio['age']< 51]['cholesterol'].mean()
+cardio[cardio['age']> 50]['cholesterol'].mean()
+cardio[cardio['age']< 51]['cholesterol'].mean()
+cardio[cardio['age']< 51]['cholesterol']
+cardio[cardio['age'] 51]['cholesterol']
+cardio[cardio['age_year']> 50]['cholesterol'].mean()
+cardio[cardio['age year']> 50]['cholesterol'].mean()
+cardio[cardio['age_years']> 50]['cholesterol'].mean()
+cardio[cardio['age_years']<= 50]['cholesterol'].mean()
+less= cardio[cardio['age_years']<= 50]['cholesterol'].mean()
+more= cardio[cardio['age_years']<= 50]['cholesterol'].mean()
+((more-less) /less) )*100
+((more-less) /less))*100
+((more-less) /less)*100
+more= cardio[cardio['age_years']> 50]['cholesterol'].mean()
+((more-less) /less)*100
+cardio.groupby('gender')['smoke'].mean()
+cardio.groupby('gender')['height'].mean()
+cardio.groupby('gender')['weight'].mean()
+cardio.groupby('gender')['smoke'].mean()
+cardio.quantile(p=99)
+cardio.quantile(q=99)
+cardio.quantile(q=0.99)
+import scipy.stats.spearmeanr as spearmeanr
+conda install scipy.stats
+import scipy.stats.spearmeanr as spearmeanr
+import scipy.stats.spearmeanr as spearmanr
+import scipy.stats.spearmanr as spearmanr
+conda install scipy.stats.spearmanr 
+import scipy.stats.spearmanr as spearmanr
+
+## ---(Thu Apr 13 12:49:51 2023)---
+runfile('C:/Users/Bernardo/untitled0.py', wdir='C:/Users/Bernardo')
+import pandas as pd
+cardio= pd.read_csv('cardio_base.csv')
+runfile('C:/Users/Bernardo/untitled0.py', wdir='C:/Users/Bernardo')
+import numpy as np
+cardio['age_years']= cardio['age'].apply(lambda x: np.floor(x/365))
+import scipy.stats.spearmanr as spearmanr
+import scipy.stats.spearmanr
+import scipy.stats
+import scipy.stats.spearmanr as spearman
+spearmanr(cardio['ap hi'], cardio['ap lo'])
+from scipy import stats
+cardio.spearman(cardio)
+a= cardio['ap_hi']
+b= cardio['ap_lo']
+stats.spearmanr(a,b)
+blood pressure= stats.spearmanr(a,b)
+blood_pressure= stats.spearmanr(a,b)
+age_weight = stats.spearmanr(cardio['age_years'],cardio['weight'])
+gender_height = stats.spearmanr(cardio['gender'],cardio['height'])
+cardio['ap_hi']+ cardio['ap_lo']
+(cardio['ap_hi']+ cardio['ap_lo'])2
+(cardio['ap_hi']+ cardio['ap_lo'])/2
+(cardio['ap_hi']+ cardio['ap_lo']).mean()
+cardio['mean_bp']= (cardio['ap_hi']+ cardio['ap_lo'])/2
+bp_age = stats.spearmanr(cardio['age_years'],cardio['mean_bp'])
+cardio['height'].std()
+cardio['height'].mean()
+cardio['height'].std()
+hstd=cardio['height'].std()
+mstd=cardio['height'].mean()
+mstd+ hstf*2
+mstd+ hstd*2
+value= mstd+ hstd*2
+cardio[height> value]
+cardio[cardio['height']> value]
+cardio[cardio['height']> value].count()
+1439/ cardio.nrows()
+1439/ cardio.nrows
+1439/ len(cardio)
+len(cardio)
+cardio_alco= pd.read_csv('cardio_alco.csv')
+pd.str.split(cardio_alco,';')
+pd.Series.str.split(cardio_alco,';')
+cardio_alco['id;alco'].str.split(';')
+alco= cardio_alco['id;alco'].str.split(';')
+alco= cardio_alco['id;alco'].str.split(';', expand= True)
+alco[['id','alcohol']]= acardio_alco['id;alco'].str.split(';', expand= True)
+cardio_alco[['id','alcohol']]= cardio_alco['id;alco'].str.split(';', expand= True)
+cardio.merge(cardio_alco, on= 'id', how='left')
+cardio_alco['id'].astype(int)
+cardio_alco['id']= cardio_alco['id'].astype(int)
+cardio_alco['alcohol']= cardio_alco['alcohol'].astype(int)
+cardio.merge(cardio_alco, on= 'id', how='left')
+cardio2 = cardio.merge(cardio_alco, on= 'id', how='left')
+cardio2= cardio2.dropna()
+cardio2['age_years']>50] & cardio2['alcohol']=1
+cardio2['age_years']>50 & cardio2['alcohol']=1
+cardio2[[cardio2['age_years']>50 & cardio2['alcohol']=1]]
+cardio2[[cardio2['age_years']>50 & cardio2['alcohol']>0]]
+cardio2[cardio2['age_years']>50]
+step1= cardio2[cardio2['age_years']>50]
+step1['alcohol']
+step1['alcohol'].mean()
+ import scipy.stats as stats
+conda install statsmodels
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+smokers_df= cardio[cardio['smoke']==1]
+non_smokers= cardio[cardio['smoke']==0]
+fvalue, pvalue= stats.f_oneway(smokers_df['mean_bp'), non_smokers['mean_bp'])
+fvalue, pvalue= stats.f_oneway(smokers_df['mean_bp'], non_smokers['mean_bp'])
+fvalue, pvalue= stats.f_oneway(smokers_df['cholesterol'], non_smokers['cholesterol'])
+covid= read.csv('covid_data.csv')
+covid= pd.read_csv('covid_data.csv')
+q0= covid[ covid['location']=='Italy' & covid['location']=='Germany']
+q0= covid[ covid['location']=='Italy' & covid['location'] =='Germany']
+covid[ covid['location']=='Italy' & covid['location'] =='Germany']
+covid['location']=='Italy'
+covid[covid['location']=='Italy']
+covid[covid['location']=='Italy' | covid['location']== 'Germany]
+covid[covid['location']=='Italy' | covid['location']== 'Germany']
+covid[covid['location']=='Italy' | covid['location']== 'Germany']]
+covid[ covid['location']=='Italy' | covid['location']== 'Germany' ]
+covid[ covid['location']=='Italy' or covid['location']== 'Germany' ]
+covid[ covid['location']=='Italy' |= covid['location']== 'Germany' ]
+covid[ covid['location']=='Italy' || covid['location']== 'Germany' ]
+covid[ covid['location']=='Italy' | covid['location']== 'Germany' ]
+covid.loc( covid['location']=='Italy' | covid['location']== 'Germany')
+covid.loc( covid['location']=='Italy', covid['location']== 'Germany')
+covid.loc[ covid['location']=='Italy', covid['location']== 'Germany']
+covid.loc[ (covid['location']=='Italy') | (covid['location']== 'Germany') ]
+q9= covid.loc[ (covid['location']=='Italy') | (covid['location']== 'Germany') ]
+q9.groupy('location')
+q9.groupby('location')
+q9.groupby('location').diff()
+germany= covid[covid['location']=='Germany]
+germany= covid[covid['location']=='Germany']
+italy= covid[covid['location']=='Italy']
+germany['new_cases'].cumsum()
+germany['CSUM']= germany['new_cases'].cumsum()
+italy['CSUM']= italy['new_cases'].cumsum()
+germany['CSUM']-italy['CSUM']
+test= germany['CSUM']-italy['CSUM']
+italy['CSUM']
+germany['CSUM']
+germany['CSUM']-italy['CSUM']
+41035- 650
+covid.groupby('location')['new_death'].sum()
+covid.groupby('location')['new_deaths'].sum()
+covid.groupby('location')['new_deaths'].sum().sort_values()
+covid.groupby('location')['new_deaths'].sum().sort_values(ascending=False)
